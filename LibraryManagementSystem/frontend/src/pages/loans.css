@@ -1,0 +1,8 @@
+.loans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-number{
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+.reservation-card {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 1fr;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 5px solid #333;
+  text-align: center;
+}

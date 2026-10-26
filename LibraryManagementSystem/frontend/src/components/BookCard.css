@@ -1,0 +1,42 @@
+.book-card{
+    background-color: #e1c5fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 200px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px;
+    border-left: 5px solid black;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.book-card:hover{
+    background-color: #d4acfb;
+}
+
+
+.author{
+    font-family: cursive;
+}
+
+.genre{
+    color: grey;
+}
+
+.book-card-back{
+    position: fixed;
+    background-color: white;
+    margin: 50px;
+    border: solid 5px black;
+    text-align: center;
+    padding: 50px;
+}
+
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

@@ -1,0 +1,25 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #cc80db;
+    height: fit-content;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin-left: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+svg{
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}

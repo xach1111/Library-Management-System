@@ -1,0 +1,33 @@
+.home {
+    background-color: white;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: black;
+}
+
+.page-number{
+    color: grey;
+}
+
+button{
+    background-color: #d4acfb;
+    border: 0;
+    margin: 5px;
+}
+
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.books-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

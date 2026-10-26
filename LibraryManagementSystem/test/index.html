@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Library Management System</h1>
+    <div class="menu">
+        <a href="#validation">Validation</a>
+        <a href="#users">Users</a>
+        <a href="#books">Books</a>
+        <a href="#book-copies">Book Copies</a>
+        <a href="#loans">Loans</a>
+        <a href="#reservations">Reservation</a>
+        <a href="#fines">Fines</a>
+    </div>
+
+    <h2>Search For Books</h2>
+    <form id="search-for-books">
+        <label>Title: </label>
+        <input type="text" name="title">
+
+        <label>Genre: </label>
+        <input type="text" name="genre">
+
+        <label>Author: </label>
+        <input type="text" name="author">
+
+        <label>limit: </label>
+        <input type="text" name="limit">
+
+        <label>page: </label>
+        <input type="text" name="page">
+
+        <button type="submit">Search For Books</button>
+    </form>
+
+    <h2>Search For loans</h2>
+    <form id="search-for-loans">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>limit: </label>
+        <input type="text" name="limit">
+
+        <label>page: </label>
+        <input type="text" name="page">
+
+        <button type="submit">Search For Loans</button>
+    </form>
+
+    <h2 id="validation">Validation</h2>
+
+    <h3>Log In</h3>
+    <form id="log-in">
+        <label>Email: </label>
+        <input type="text" name="email">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Log In</button>
+    </form>
+
+    <h2 id="users">Users</h2>
+
+    <h3>Add Member</h3>
+    <form id="add-member">
+        <label>First Name: </label>
+        <input type="text" name="firstName">
+
+        <label>Last Name: </label>
+        <input type="text" name="lastName">
+
+        <label>Email: </label>
+        <input type="text" name="email">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Add Member</button>
+    </form>
+
+    <h3>Delete Member</h3>
+    <form id="delete-member">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Delete Member</button>
+    </form>
+
+    <h3>Freeze Member</h3>
+    <form id="freeze-member">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Freeze Member</button>
+    </form>
+
+    <h3>Unfreeze Member</h3>
+    <form id="unfreeze-member">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Unfreeze Member</button>
+    </form>
+
+    <h3>Change Password</h3>
+    <form id="change-password">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Current Password: </label>
+        <input type="text" name="currentPassword">
+
+        <label>New Password: </label>
+        <input type="text" name="newPassword">
+
+        <button type="submit">Change Password</button>
+    </form>
+
+    <h3>Change Name</h3>
+    <form id="change-name">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>First Name: </label>
+        <input type="text" name="firstName">
+
+        <label>Last Name: </label>
+        <input type="text" name="lastName">
+
+        <button type="submit">Change Name</button>
+    </form>
+
+    <h3>Promote Member</h3>
+    <form id="promote-member">
+        <label>Member User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Email: </label>
+        <input type="text" name="email">
+
+        <label>Password: </label>
+        <input type="text" name="password">
+
+        <button type="submit">Promote Member</button>
+    </form>
+
+    <h2 id="books">Books</h2>
+
+    <h3>Add Book</h3>
+    <form id="add-book">
+        <label>Title: </label>
+        <input type="text" name="title">
+
+        <label>Genre: </label>
+        <input type="text" name="genre">
+
+        <label>Description: </label>
+        <input type="text" name="description">
+
+        <label>Author: </label>
+        <input type="text" name="author">
+
+        <button type="submit">Add Book</button>
+    </form>
+
+    <h3>Delete Book</h3>
+    <form id="delete-book">
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <button type="submit">Delete Book</button>
+    </form>
+
+    <h3>Update Book</h3>
+    <form id="update-book">
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <label>Title: </label>
+        <input type="text" name="title">
+
+        <label>Genre: </label>
+        <input type="text" name="genre">
+
+        <label>Description: </label>
+        <input type="text" name="description">
+
+        <label>Author: </label>
+        <input type="text" name="author">
+
+        <button type="submit">Update Book</button>
+    </form>
+
+    <h2 id="book-copies">Book Copies</h2>
+
+    <h3>Add Book Copy</h3>
+    <form id="add-book-copy">
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <button type="submit">Add Book Copy</button>
+    </form>
+
+    <h3>Delete Book Copy</h3>
+    <form id="delete-book-copy">
+        <label>Copy ID: </label>
+        <input type="text" name="copyID">
+
+        <button type="submit">Delete Book Copy</button>
+    </form>
+
+    <h2 id="loans">Loans</h2>
+
+    <h3>Borrow Loan</h3>
+    <form id="borrow-loan">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <button type="submit">Borrow Loan</button>
+    </form>
+
+    <h3>Renew Loan</h3>
+    <form id="renew-loan">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <label>Due Date: </label>
+        <input type="text" name="dueDate">
+
+        <button type="submit">Renew Loan</button>
+    </form>
+
+    <h3>Return Loan</h3>
+    <form id="return-loan">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <button type="submit">Return Loan</button>
+    </form>
+
+    <h3>Lose Loan</h3>
+    <form id="lose-loan">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <button type="submit">Lose Loan</button>
+    </form>
+
+    <h2 id="reservations">Reservations</h2>
+
+    <h3>Add Reservation</h3>
+    <form id="add-reservation">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <label>Expiry Date: </label>
+        <input type="text" name="expiryDate">
+
+        <button type="submit">Add Reservation</button>
+    </form>
+
+    <h3>Delete Reservation</h3>
+    <form id="delete-reservation">
+        <label>User ID: </label>
+        <input type="text" name="userID">
+
+        <label>Book ID: </label>
+        <input type="text" name="bookID">
+
+        <button type="submit">Delete Reservation</button>
+    </form>
+
+    <h2 id="fines">Fines</h2>
+
+    <h3>Issue Fine</h3>
+    <form id="issue-fine">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <label>Type: </label>
+        <input type="text" name="type">
+
+        <label>Amount: </label>
+        <input type="text" name="amount">
+
+        <label>Status: </label>
+        <input type="text" name="status">
+
+        <button type="submit">Issue Fine</button>
+    </form>
+
+    <h3>Pay Fine</h3>
+    <form id="pay-fine">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <label>Date: </label>
+        <input type="text" name="date">
+
+        <label>Payment Token: </label>
+        <input type="text" name="paymentToken">
+
+        <button type="submit">Pay Fine</button>
+    </form>
+
+    <h3>Cancel Fine</h3>
+    <form id="cancel-fine">
+        <label>Loan ID: </label>
+        <input type="text" name="loanID">
+
+        <label>Date: </label>
+        <input type="text" name="date">
+
+        <button type="submit">Cancel Fine</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
